@@ -1,83 +1,110 @@
 <script setup>
-import { onMounted, computed, watch } from 'vue';
+import { onMounted, watch, ref } from 'vue';
 import { usePlanStore } from './stores/planStore';
-import { useRecipeStore } from './stores/recipeStore';
 import RecipeTreeNode from './components/RecipeTreeNode.vue';
 import ProductionTable from './components/ProductionTable.vue';
 import ItemSelector from './components/ItemSelector.vue';
-import { buildPathTree } from './engine/pathFinder';
+import Catalog from './components/Catalog.vue';
 
 const planStore = usePlanStore();
-const recipeStore = useRecipeStore();
+const activeTab = ref('plan'); // 'plan' 或 'catalog'
+const isDark = ref(false);
 
-// 监听目标物品和产量的变化，自动计算
-watch(
-  [() => planStore.targetItemId, () => planStore.targetPerMin],
-  () => {
-    planStore.calculate();
-  }
-);
+function toggleTheme() {
+  isDark.value = !isDark.value;
+  document.body.className = isDark.value ? 'dark' : '';
+}
 
-onMounted(() => {
-  planStore.calculate(); // 初始化时计算一次
-});
-
-// 构建可视化树
-const pathTree = computed(() => {
-  if (!planStore.targetItemId) return null;
-  return buildPathTree(
-    planStore.targetItemId,
-    recipeStore.recipesById,
-    recipeStore.recipesByResult,
-    { selectedRecipes: planStore.selectedRecipes }
-  );
-});
+watch([() => planStore.targetItemId, () => planStore.targetPerMin], () => planStore.calculate());
+onMounted(() => planStore.calculate());
 </script>
 
 <template>
   <div class="app-container">
-    <header>
-      <h1>🌌 戴森球计划 - 产能规划工具</h1>
-      <p>输入目标产量，自动计算合成路径、建筑数量与原材料需求。</p>
+    <!-- 顶部导航与标题 -->
+    <header class="top-bar">
+      <div class="title-area">
+        <h1>🌌 戴森球计划 - 产能规划工具</h1>
+      </div>
+      <div class="action-area">
+        <el-button size="small" @click="toggleTheme">
+          {{ isDark ? '☀️ 浅色模式' : '🌙 深色模式' }}
+        </el-button>
+        <el-button size="small" :type="activeTab === 'plan' ? 'primary' : 'default'" @click="activeTab = 'plan'">📊 产能规划</el-button>
+        <el-button size="small" :type="activeTab === 'catalog' ? 'primary' : 'default'" @click="activeTab = 'catalog'">📖 全局图鉴</el-button>
+      </div>
     </header>
 
-    <section class="controls">
-      <div class="control-item">
-        <span class="label">选择目标物品：</span>
-        <ItemSelector v-model="planStore.targetItemId" />
+    <!-- 页面内容切换 -->
+    <div v-show="activeTab === 'plan'">
+      <el-card class="controls-card" shadow="hover">
+        <div class="controls">
+          <div class="control-item">
+            <span class="label">目标类型：</span>
+            <el-radio-group v-model="planStore.targetCategory" size="small">
+              <el-radio-button value="item">物品</el-radio-button>
+              <el-radio-button value="building">建筑</el-radio-button>
+            </el-radio-group>
+          </div>
+          <div class="control-item">
+            <span class="label">选择目标：</span>
+            <ItemSelector v-model="planStore.targetItemId" :type="planStore.targetCategory" />
+          </div>
+          <div class="control-item">
+            <span class="label">目标产量：</span>
+            <el-input-number v-model="planStore.targetPerMin" :min="1" :step="10" size="small" />
+          </div>
+          <div class="control-item switch-item">
+            <span class="label">悬停浮窗：</span>
+            <el-switch v-model="planStore.showHoverDetails" />
+            <span class="label" style="margin-left: 10px;">树形图详情：</span>
+            <el-switch v-model="planStore.showTreeDetails" />
+          </div>
+        </div>
+      </el-card>
+
+      <div class="results">
+        <el-card class="panel" shadow="hover">
+          <template #header>
+            <div class="panel-header">
+              <span>🌳 合成路径树</span>
+              <span class="sub-header">(悬停查看详情，可切换建筑/配方)</span>
+            </div>
+          </template>
+          <div class="tree-container">
+            <RecipeTreeNode v-if="planStore.currentTree" :node="planStore.currentTree" />
+            <el-empty v-else description="请选择目标物品或建筑" />
+          </div>
+        </el-card>
+
+        <el-card class="panel" shadow="hover">
+          <ProductionTable />
+        </el-card>
       </div>
+    </div>
 
-      <div class="control-item">
-        <span class="label">目标产量（每分钟）：</span>
-        <el-input-number v-model="planStore.targetPerMin" :min="1" :step="10" />
-      </div>
-    </section>
-
-    <div class="results">
-      <section class="panel path-tree">
-        <h3>合成路径树</h3>
-        <RecipeTreeNode v-if="pathTree" :node="pathTree" :depth="0" />
-        <el-empty v-else description="请先选择目标物品" />
-      </section>
-
-      <section class="panel">
-        <ProductionTable />
-      </section>
+    <div v-show="activeTab === 'catalog'" class="catalog-view">
+      <Catalog />
     </div>
   </div>
 </template>
 
 <style scoped>
-.app-container { max-width: 1200px; margin: 0 auto; padding: 20px; font-family: system-ui, -apple-system, sans-serif; }
-header { text-align: center; margin-bottom: 30px; }
-header h1 { color: #2c3e50; margin-bottom: 5px; }
-header p { color: #7f8c8d; margin-top: 5px; }
-
-.controls { display: flex; gap: 30px; align-items: center; background: #f8f9fa; padding: 20px 30px; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 2px 12px 0 rgba(0,0,0,0.05); }
-.control-item { display: flex; align-items: center; gap: 10px; font-weight: bold; color: #34495e; }
-
-.results { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
-@media (max-width: 900px) { .results { grid-template-columns: 1fr; } }
-.panel { background: #fff; padding: 24px; border-radius: 12px; box-shadow: 0 2px 12px 0 rgba(0,0,0,0.05); }
-.panel h3 { margin-top: 0; color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 12px; }
+.app-container { min-height: 100vh; background-color: var(--bg-color); color: var(--text-main); padding: 20px; max-width: 1440px; margin: 0 auto; transition: background-color 0.3s; }
+.top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.title-area h1 { font-size: 20px; margin: 0; color: var(--text-main); font-weight: 600; }
+.action-area { display: flex; gap: 10px; }
+.controls-card { margin-bottom: 16px; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+.control-item { display: flex; align-items: center; gap: 8px; font-weight: bold; color: var(--text-main); font-size: 13px; }
+.switch-item { margin-left: auto; color: #409eff; }
+.results { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+@media (max-width: 1024px) { .results { grid-template-columns: 1fr; } }
+.panel { height: 100%; border-radius: 8px; overflow: hidden; }
+.panel-header { display: flex; justify-content: space-between; font-size: 15px; font-weight: bold; }
+.sub-header { font-size: 12px; color: var(--text-sub); font-weight: normal; }
+.tree-container { min-height: 500px; max-height: 75vh; overflow-y: auto; padding: 10px; }
+.tree-container::-webkit-scrollbar { width: 6px; }
+.tree-container::-webkit-scrollbar-thumb { background: #dcdfe6; border-radius: 3px; }
+.catalog-view { margin-top: 16px; }
 </style>

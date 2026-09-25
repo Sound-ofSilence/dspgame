@@ -1,72 +1,27 @@
 <script setup>
-import { ref, computed, watch } from 'vue';
+import { computed } from 'vue';
 import { useRecipeStore } from '../stores/recipeStore';
 
 const recipeStore = useRecipeStore();
-const keyword = ref('');
-const isOpen = ref(false);
-
 const props = defineProps({
-  modelValue: { type: Number, default: null }
+  modelValue: { type: Number, default: null },
+  type: { type: String, default: 'item' } // 'item' 或 'building'
 });
 const emit = defineEmits(['update:modelValue']);
 
-// 监听外部传入的 modelValue，实时同步显示文字
-watch(() => props.modelValue, (newVal) => {
-  if (newVal) {
-    keyword.value = recipeStore.getItemName(newVal);
-  }
-}, { immediate: true });
-
-// 过滤物品
-const filteredItems = computed(() => {
-  if (!keyword.value) return Object.values(recipeStore.items);
-  const lower = keyword.value.toLowerCase();
-  return Object.values(recipeStore.items).filter(item =>
-    item.Name.toLowerCase().includes(lower)
-  );
+const options = computed(() => {
+  const all = Object.values(recipeStore.items);
+  const filtered = props.type === 'building' 
+    ? all.filter(i => i.Type === 4 || i.Name.includes('制造台') || i.Name.includes('熔炉') || i.Name.includes('化工厂'))
+    : all.filter(i => i.Type !== 4);
+  return filtered.map(i => ({ value: i.ID, label: i.Name }));
 });
 
-function selectItem(itemId) {
-  const id = Number(itemId);
-  emit('update:modelValue', id);
-  keyword.value = recipeStore.getItemName(id);
-  isOpen.value = false;
-}
+const placeholder = computed(() => props.type === 'building' ? '搜索建筑...' : '搜索物品...');
 </script>
 
 <template>
-  <div class="selector-wrapper">
-    <el-input
-      v-model="keyword"
-      placeholder="搜索物品..."
-      @focus="isOpen = true"
-      clearable
-      style="width: 220px;"
-    />
-    <ul v-if="isOpen && filteredItems.length" class="dropdown">
-      <li
-        v-for="item in filteredItems.slice(0, 20)"
-        :key="item.ID"
-        @click="selectItem(item.ID)"
-      >
-        {{ item.Name }}
-      </li>
-    </ul>
-    <div v-if="isOpen" class="overlay" @click="isOpen = false"></div>
-  </div>
+  <el-select :model-value="modelValue" filterable clearable :placeholder="placeholder" style="width: 200px;" @change="val => emit('update:modelValue', val)">
+    <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
+  </el-select>
 </template>
-
-<style scoped>
-.selector-wrapper { position: relative; width: 220px; }
-.dropdown {
-  position: absolute; top: 100%; left: 0; right: 0; background: white; border: 1px solid #ddd;
-  border-radius: 4px; max-height: 200px; overflow-y: auto; margin: 4px 0 0; padding: 0;
-  list-style: none; z-index: 999; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.dropdown li {
-  padding: 8px 12px; cursor: pointer; font-size: 14px; color: #2c3e50;
-}
-.dropdown li:hover { background-color: #ecf5ff; color: #409eff; }
-.overlay { position: fixed; inset: 0; z-index: 998; }
-</style>
