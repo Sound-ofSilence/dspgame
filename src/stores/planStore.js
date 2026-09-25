@@ -5,17 +5,24 @@ import { calculateProduction } from '../engine/calculator';
 import { useRecipeStore } from './recipeStore';
 
 export const usePlanStore = defineStore('plan', () => {
-  const targetItemId = ref(null);
+  const targetItemId = ref(1106); // 默认电路板
   const targetPerMin = ref(60);
   const buildingSpeedMultiplier = ref(1.0);
-  const selectedRecipes = ref(new Map()); // 后续用于切换配方
+  const selectedRecipes = ref({}); // 用普通对象代替 Map，避免响应式失效
   const result = ref(null);
+
+  // 切换配方的方法
+  function selectRecipe(itemId, recipeId) {
+    selectedRecipes.value[itemId] = recipeId;
+    // 强制触发更新
+    selectedRecipes.value = { ...selectedRecipes.value };
+  }
 
   function calculate() {
     const recipeStore = useRecipeStore();
     if (!targetItemId.value) return;
 
-    // 1. 构建树
+    // 构建树
     const tree = buildPathTree(
       targetItemId.value,
       recipeStore.recipesById,
@@ -23,7 +30,7 @@ export const usePlanStore = defineStore('plan', () => {
       { selectedRecipes: selectedRecipes.value }
     );
 
-    // 2. 计算产能
+    // 计算产能
     result.value = calculateProduction(
       tree,
       recipeStore.recipesById,
@@ -33,5 +40,13 @@ export const usePlanStore = defineStore('plan', () => {
     );
   }
 
-  return { targetItemId, targetPerMin, buildingSpeedMultiplier, selectedRecipes, result, calculate };
+  return { 
+    targetItemId, 
+    targetPerMin, 
+    buildingSpeedMultiplier, 
+    selectedRecipes, 
+    result, 
+    calculate, 
+    selectRecipe 
+  };
 });

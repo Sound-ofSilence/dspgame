@@ -46,11 +46,22 @@
     },
     {
       "ID": 5,
-      "Name": "电路板",
+      "Name": "电路板(铁块+铜块)",
       "Type": 4,
       "Factories": [2303],
       "Items": [1101, 1103],
       "ItemCounts": [1, 2],
+      "Results": [1106],
+      "ResultCounts": [1],
+      "TimeSpend": 60
+    },
+    {
+      "ID": 6,
+      "Name": "电路板(铁块+磁铁)",
+      "Type": 4,
+      "Factories": [2303],
+      "Items": [1101, 1102],
+      "ItemCounts": [1, 1],
       "Results": [1106],
       "ResultCounts": [1],
       "TimeSpend": 60
