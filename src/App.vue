@@ -4,6 +4,7 @@ import { usePlanStore } from './stores/planStore';
 import { useRecipeStore } from './stores/recipeStore';
 import RecipeTreeNode from './components/RecipeTreeNode.vue';
 import ProductionTable from './components/ProductionTable.vue';
+import ItemSelector from './components/ItemSelector.vue';
 
 const planStore = usePlanStore();
 const recipeStore = useRecipeStore();
@@ -39,11 +40,10 @@ const pathTree = computed(() => {
     <section class="controls">
       <label>
         选择目标物品：
-        <select v-model="planStore.targetItemId">
-          <option v-for="(item, id) in recipeStore.items" :key="id" :value="Number(id)">
-            {{ item.Name }}
-          </option>
-        </select>
+        <label>
+         选择目标物品：
+         <ItemSelector v-model="planStore.targetItemId" />
+        </label>
       </label>
 
       <label>
