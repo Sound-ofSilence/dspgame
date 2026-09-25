@@ -1,5 +1,21 @@
-# Vue 3 + Vite
+# 🌌 戴森球计划 - 产能规划工具
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+一个为《戴森球计划》玩家打造的纯前端工具，用于直观查看物品的合成路径、计算建筑数量和规划产能。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## ✨ 核心功能
+- **合成路径树**：递归展示任意物品的完整生产链，自动识别原矿和循环依赖。
+- **产能规划**：输入目标产量（每分钟），自动推导各层级所需的建筑数量与总电力消耗。
+- **原材料汇总**：一键统计所有原矿的每分钟总需求。
+
+## 🛠️ 技术栈
+- **前端框架**：Vue 3 + Vite
+- **状态管理**：Pinia
+- **数据存储**：本地 JSON（当前为样本数据，后续将替换为游戏全量数据）
+
+## 🚀 快速开始
+```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
