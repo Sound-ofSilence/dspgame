@@ -1,0 +1,59 @@
+{
+  "recipes": [
+    {
+      "ID": 1,
+      "Name": "铁块",
+      "Type": 1,
+      "Factories": [2302],
+      "Items": [1001],
+      "ItemCounts": [1],
+      "Results": [1101],
+      "ResultCounts": [1],
+      "TimeSpend": 60
+    },
+    {
+      "ID": 2,
+      "Name": "磁铁",
+      "Type": 1,
+      "Factories": [2302],
+      "Items": [1001],
+      "ItemCounts": [1],
+      "Results": [1102],
+      "ResultCounts": [1],
+      "TimeSpend": 60
+    },
+    {
+      "ID": 3,
+      "Name": "铜块",
+      "Type": 1,
+      "Factories": [2302],
+      "Items": [1002],
+      "ItemCounts": [1],
+      "Results": [1103],
+      "ResultCounts": [1],
+      "TimeSpend": 60
+    },
+    {
+      "ID": 4,
+      "Name": "齿轮",
+      "Type": 4,
+      "Factories": [2303],
+      "Items": [1101],
+      "ItemCounts": [1],
+      "Results": [1104],
+      "ResultCounts": [1],
+      "TimeSpend": 60
+    },
+    {
+      "ID": 5,
+      "Name": "电路板",
+      "Type": 4,
+      "Factories": [2303],
+      "Items": [1101, 1103],
+      "ItemCounts": [1, 2],
+      "Results": [1106],
+      "ResultCounts": [1],
+      "TimeSpend": 60
+    }
+  ]
+}
