@@ -7,7 +7,7 @@ import ItemSelector from './components/ItemSelector.vue';
 import Catalog from './components/Catalog.vue';
 
 const planStore = usePlanStore();
-const activeTab = ref('plan'); // 'plan' 或 'catalog'
+const activeTab = ref('plan');
 const isDark = ref(false);
 
 function toggleTheme() {
@@ -21,7 +21,6 @@ onMounted(() => planStore.calculate());
 
 <template>
   <div class="app-container">
-    <!-- 顶部导航与标题 -->
     <header class="top-bar">
       <div class="title-area">
         <h1>🌌 戴森球计划 - 产能规划工具</h1>
@@ -35,8 +34,8 @@ onMounted(() => planStore.calculate());
       </div>
     </header>
 
-    <!-- 页面内容切换 -->
-    <div v-show="activeTab === 'plan'">
+    <!-- 使用 v-if 切换页面，解决组件状态丢失和 ECharts 渲染错误 -->
+    <div v-if="activeTab === 'plan'">
       <el-card class="controls-card" shadow="hover">
         <div class="controls">
           <div class="control-item">
@@ -54,11 +53,26 @@ onMounted(() => planStore.calculate());
             <span class="label">目标产量：</span>
             <el-input-number v-model="planStore.targetPerMin" :min="1" :step="10" size="small" />
           </div>
+          <div class="control-item">
+            <span class="label">单位：</span>
+            <el-radio-group v-model="planStore.timeUnit" size="small">
+              <el-radio-button value="min">/分</el-radio-button>
+              <el-radio-button value="hour">/时</el-radio-button>
+              <el-radio-button value="sec">/秒</el-radio-button>
+            </el-radio-group>
+          </div>
           <div class="control-item switch-item">
-            <span class="label">悬停浮窗：</span>
+            <span class="label">悬浮框显示：</span>
+            <el-radio-group v-model="planStore.hoverDisplayMode" size="small">
+              <el-radio-button value="ratio">比例</el-radio-button>
+              <el-radio-button value="quantity">数量</el-radio-button>
+            </el-radio-group>
+            <span class="label" style="margin-left: 10px;">悬停浮窗：</span>
             <el-switch v-model="planStore.showHoverDetails" />
-            <span class="label" style="margin-left: 10px;">树形图详情：</span>
-            <el-switch v-model="planStore.showTreeDetails" />
+            
+            <!-- 新增：固化悬浮窗开关 -->
+            <span class="label" style="margin-left: 10px; color: #e6a23c;">点击固化浮窗：</span>
+            <el-switch v-model="planStore.enableStickyPopover" />
           </div>
         </div>
       </el-card>
@@ -68,7 +82,7 @@ onMounted(() => planStore.calculate());
           <template #header>
             <div class="panel-header">
               <span>🌳 合成路径树</span>
-              <span class="sub-header">(悬停查看详情，可切换建筑/配方)</span>
+              <span class="sub-header">(悬停查看详情，点击可弹出固化浮窗)</span>
             </div>
           </template>
           <div class="tree-container">
@@ -83,7 +97,7 @@ onMounted(() => planStore.calculate());
       </div>
     </div>
 
-    <div v-show="activeTab === 'catalog'" class="catalog-view">
+    <div v-if="activeTab === 'catalog'" class="catalog-view">
       <Catalog />
     </div>
   </div>
@@ -95,7 +109,7 @@ onMounted(() => planStore.calculate());
 .title-area h1 { font-size: 20px; margin: 0; color: var(--text-main); font-weight: 600; }
 .action-area { display: flex; gap: 10px; }
 .controls-card { margin-bottom: 16px; }
-.controls { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
 .control-item { display: flex; align-items: center; gap: 8px; font-weight: bold; color: var(--text-main); font-size: 13px; }
 .switch-item { margin-left: auto; color: #409eff; }
 .results { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 16px; align-items: start; }

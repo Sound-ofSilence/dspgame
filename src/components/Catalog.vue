@@ -3,6 +3,7 @@ import { ref, computed } from 'vue';
 import { useRecipeStore } from '../stores/recipeStore';
 import { usePlanStore } from '../stores/planStore';
 import CatalogGraph from './CatalogGraph.vue';
+import CatalogSankey from './CatalogSankey.vue';
 
 const recipeStore = useRecipeStore();
 const planStore = usePlanStore();
@@ -23,21 +24,25 @@ const filteredRecipes = computed(() => {
         <span>全局物品图鉴</span>
         <div class="filter-actions">
           <el-radio-group v-model="planStore.catalogViewMode" size="small">
-            <el-radio-button value="graph">网状关系图</el-radio-button>
+            <el-radio-button value="graph">关系网络图</el-radio-button>
+            <el-radio-button value="sankey">层级流向图</el-radio-button>
             <el-radio-button value="table">数据表格</el-radio-button>
           </el-radio-group>
-          <el-input v-model="keyword" placeholder="搜索配方或物品..." style="width: 200px;" clearable />
+          <el-input v-if="planStore.catalogViewMode === 'table'" v-model="keyword" placeholder="搜索配方或物品..." style="width: 200px;" clearable />
         </div>
       </div>
     </el-card>
     
-    <!-- 网状图视图 -->
-    <div v-show="planStore.catalogViewMode === 'graph'" class="view-panel">
+    <!-- 使用 v-if 替换 v-show，确保 ECharts 组件在切换时重新挂载 -->
+    <div v-if="planStore.catalogViewMode === 'graph'" class="view-panel">
       <CatalogGraph />
     </div>
 
-    <!-- 表格视图 -->
-    <div v-show="planStore.catalogViewMode === 'table'" class="view-panel">
+    <div v-if="planStore.catalogViewMode === 'sankey'" class="view-panel">
+      <CatalogSankey />
+    </div>
+
+    <div v-if="planStore.catalogViewMode === 'table'" class="view-panel">
       <el-table :data="filteredRecipes" stripe style="width: 100%; margin-top: 16px;" height="70vh" :header-cell-style="{ background: '#f5f7fa' }">
         <el-table-column prop="Name" label="产物名称" width="180" />
         <el-table-column label="配方要求" min-width="300">
