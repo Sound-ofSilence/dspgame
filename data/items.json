@@ -3,1044 +3,1218 @@
     "ID": 0,
     "Name": "伊卡洛斯",
     "Type": -1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1": {
     "ID": 1,
     "Name": "行星基地",
     "Type": -1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1000": {
     "ID": 1000,
     "Name": "水",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1001": {
     "ID": 1001,
     "Name": "铁矿",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1002": {
     "ID": 1002,
     "Name": "铜矿",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1003": {
     "ID": 1003,
     "Name": "硅石",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1004": {
     "ID": 1004,
     "Name": "钛石",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1005": {
     "ID": 1005,
     "Name": "石矿",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1006": {
     "ID": 1006,
     "Name": "煤矿",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1007": {
     "ID": 1007,
     "Name": "原油",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1011": {
     "ID": 1011,
     "Name": "可燃冰",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1012": {
     "ID": 1012,
     "Name": "金伯利矿石",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1013": {
     "ID": 1013,
     "Name": "分形硅石",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1014": {
     "ID": 1014,
     "Name": "光栅石",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1015": {
     "ID": 1015,
     "Name": "刺笋结晶",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1016": {
     "ID": 1016,
     "Name": "单极磁石",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1030": {
     "ID": 1030,
     "Name": "木材",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1031": {
     "ID": 1031,
     "Name": "植物燃料",
     "Type": 1,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1101": {
     "ID": 1101,
     "Name": "铁块",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1102": {
     "ID": 1102,
     "Name": "磁铁",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1103": {
     "ID": 1103,
     "Name": "钢材",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1104": {
     "ID": 1104,
     "Name": "铜块",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1105": {
     "ID": 1105,
     "Name": "高纯硅块",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1106": {
     "ID": 1106,
     "Name": "钛块",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1107": {
     "ID": 1107,
     "Name": "钛合金",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1108": {
     "ID": 1108,
     "Name": "石材",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1109": {
     "ID": 1109,
     "Name": "高能石墨",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1110": {
     "ID": 1110,
     "Name": "玻璃",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1111": {
     "ID": 1111,
     "Name": "棱镜",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1112": {
     "ID": 1112,
     "Name": "金刚石",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1113": {
     "ID": 1113,
     "Name": "晶格硅",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1114": {
     "ID": 1114,
     "Name": "精炼油",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1115": {
     "ID": 1115,
     "Name": "塑料",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1116": {
     "ID": 1116,
     "Name": "硫酸",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1117": {
     "ID": 1117,
     "Name": "有机晶体",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1118": {
     "ID": 1118,
     "Name": "钛晶石",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1119": {
     "ID": 1119,
     "Name": "钛化玻璃",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1120": {
     "ID": 1120,
     "Name": "氢",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1121": {
     "ID": 1121,
     "Name": "重氢",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1122": {
     "ID": 1122,
     "Name": "反物质",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1123": {
     "ID": 1123,
     "Name": "石墨烯",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1124": {
     "ID": 1124,
     "Name": "碳纳米管",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1125": {
     "ID": 1125,
     "Name": "框架材料",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1126": {
     "ID": 1126,
     "Name": "卡西米尔晶体",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1127": {
     "ID": 1127,
     "Name": "奇异物质",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1128": {
     "ID": 1128,
     "Name": "燃烧单元",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1129": {
     "ID": 1129,
     "Name": "爆破单元",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1130": {
     "ID": 1130,
     "Name": "晶石爆破单元",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1131": {
     "ID": 1131,
     "Name": "地基",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1141": {
     "ID": 1141,
     "Name": "增产剂 Mk.I",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1142": {
     "ID": 1142,
     "Name": "增产剂 Mk.II",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1143": {
     "ID": 1143,
     "Name": "增产剂 Mk.III",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1201": {
     "ID": 1201,
     "Name": "齿轮",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1202": {
     "ID": 1202,
     "Name": "磁线圈",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1203": {
     "ID": 1203,
     "Name": "电动机",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1204": {
     "ID": 1204,
     "Name": "电磁涡轮",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1205": {
     "ID": 1205,
     "Name": "超级磁场环",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1206": {
     "ID": 1206,
     "Name": "粒子容器",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1208": {
     "ID": 1208,
     "Name": "临界光子",
     "Type": 2,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1209": {
     "ID": 1209,
     "Name": "引力透镜",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1210": {
     "ID": 1210,
     "Name": "空间翘曲器",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1301": {
     "ID": 1301,
     "Name": "电路板",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1302": {
     "ID": 1302,
     "Name": "微晶元件",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1303": {
     "ID": 1303,
     "Name": "处理器",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1304": {
     "ID": 1304,
     "Name": "位面过滤器",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1305": {
     "ID": 1305,
     "Name": "量子芯片",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1401": {
     "ID": 1401,
     "Name": "电浆激发器",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1402": {
     "ID": 1402,
     "Name": "粒子宽带",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1403": {
     "ID": 1403,
     "Name": "湮灭约束球",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1404": {
     "ID": 1404,
     "Name": "光子合并器",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1405": {
     "ID": 1405,
     "Name": "推进器",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1406": {
     "ID": 1406,
     "Name": "加力推进器",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1407": {
     "ID": 1407,
     "Name": "动力引擎",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1501": {
     "ID": 1501,
     "Name": "太阳帆",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1502": {
     "ID": 1502,
     "Name": "戴森球组件",
     "Type": 3,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1503": {
     "ID": 1503,
     "Name": "小型运载火箭",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1601": {
     "ID": 1601,
     "Name": "机枪弹箱",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1602": {
     "ID": 1602,
     "Name": "钛化弹箱",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1603": {
     "ID": 1603,
     "Name": "超合金弹箱",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1604": {
     "ID": 1604,
     "Name": "炮弹组",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1605": {
     "ID": 1605,
     "Name": "高爆炮弹组",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1606": {
     "ID": 1606,
     "Name": "晶石炮弹组",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1607": {
     "ID": 1607,
     "Name": "等离子胶囊",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1608": {
     "ID": 1608,
     "Name": "反物质胶囊",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1609": {
     "ID": 1609,
     "Name": "导弹组",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1610": {
     "ID": 1610,
     "Name": "超音速导弹组",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1611": {
     "ID": 1611,
     "Name": "引力导弹组",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1612": {
     "ID": 1612,
     "Name": "干扰胶囊",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1613": {
     "ID": 1613,
     "Name": "压制胶囊",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1801": {
     "ID": 1801,
     "Name": "液氢燃料棒",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1802": {
     "ID": 1802,
     "Name": "氘核燃料棒",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1803": {
     "ID": 1803,
     "Name": "反物质燃料棒",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "1804": {
     "ID": 1804,
     "Name": "奇异湮灭燃料棒",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "2001": {
     "ID": 2001,
     "Name": "传送带",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2002": {
     "ID": 2002,
     "Name": "高速传送带",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2003": {
     "ID": 2003,
     "Name": "极速传送带",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2011": {
     "ID": 2011,
     "Name": "分拣器",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2012": {
     "ID": 2012,
     "Name": "高速分拣器",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2013": {
     "ID": 2013,
     "Name": "极速分拣器",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2014": {
     "ID": 2014,
     "Name": "集装分拣器",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2020": {
     "ID": 2020,
     "Name": "四向分流器",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2030": {
     "ID": 2030,
     "Name": "流速监测器",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "2040": {
     "ID": 2040,
     "Name": "自动集装机",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2101": {
     "ID": 2101,
     "Name": "小型储物仓",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2102": {
     "ID": 2102,
     "Name": "大型储物仓",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2103": {
     "ID": 2103,
     "Name": "行星内物流运输站",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2104": {
     "ID": 2104,
     "Name": "星际物流运输站",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2105": {
     "ID": 2105,
     "Name": "轨道采集器",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2106": {
     "ID": 2106,
     "Name": "储液罐",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2107": {
     "ID": 2107,
     "Name": "物流配送器",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2201": {
     "ID": 2201,
     "Name": "电力感应塔",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2202": {
     "ID": 2202,
     "Name": "无线输电塔",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2203": {
     "ID": 2203,
     "Name": "风力涡轮机",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2204": {
     "ID": 2204,
     "Name": "火力发电厂",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2205": {
     "ID": 2205,
     "Name": "太阳能板",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2206": {
     "ID": 2206,
     "Name": "蓄电器",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2207": {
     "ID": 2207,
     "Name": "蓄电器（满）",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2208": {
     "ID": 2208,
     "Name": "射线接收站",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2209": {
     "ID": 2209,
     "Name": "能量枢纽",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2210": {
     "ID": 2210,
     "Name": "人造恒星",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2211": {
     "ID": 2211,
     "Name": "微型聚变发电站",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2212": {
     "ID": 2212,
     "Name": "卫星配电站",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2213": {
     "ID": 2213,
     "Name": "地热发电站",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2301": {
     "ID": 2301,
     "Name": "采矿机",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2302": {
     "ID": 2302,
     "Name": "电弧熔炉",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2303": {
     "ID": 2303,
     "Name": "制造台 Mk.I",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2304": {
     "ID": 2304,
     "Name": "制造台 Mk.II",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2305": {
     "ID": 2305,
     "Name": "制造台 Mk.III",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2306": {
     "ID": 2306,
     "Name": "抽水站",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2307": {
     "ID": 2307,
     "Name": "原油萃取站",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2308": {
     "ID": 2308,
     "Name": "原油精炼厂",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2309": {
     "ID": 2309,
     "Name": "化工厂",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2310": {
     "ID": 2310,
     "Name": "微型粒子对撞机",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2311": {
     "ID": 2311,
     "Name": "电磁轨道弹射器",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2312": {
     "ID": 2312,
     "Name": "垂直发射井",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2313": {
     "ID": 2313,
     "Name": "喷涂机",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2314": {
     "ID": 2314,
     "Name": "分馏塔",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2315": {
     "ID": 2315,
     "Name": "位面熔炉",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2316": {
     "ID": 2316,
     "Name": "大型采矿机",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2317": {
     "ID": 2317,
     "Name": "量子化工厂",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "2318": {
     "ID": 2318,
     "Name": "重组式制造台",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2319": {
     "ID": 2319,
     "Name": "负熵熔炉",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2901": {
     "ID": 2901,
     "Name": "矩阵研究站",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "2902": {
     "ID": 2902,
     "Name": "自演化研究站",
     "Type": 6,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "3001": {
     "ID": 3001,
     "Name": "高斯机枪塔",
     "Type": 8,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "3002": {
     "ID": 3002,
     "Name": "高频激光塔",
     "Type": 8,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "3003": {
     "ID": 3003,
     "Name": "聚爆加农炮",
     "Type": 8,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "3004": {
     "ID": 3004,
     "Name": "磁化电浆炮",
     "Type": 8,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "3005": {
     "ID": 3005,
     "Name": "导弹防御塔",
     "Type": 8,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "3006": {
     "ID": 3006,
     "Name": "干扰塔",
     "Type": 8,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "3007": {
     "ID": 3007,
     "Name": "信号塔",
     "Type": 9,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "3008": {
     "ID": 3008,
     "Name": "行星护盾发生器",
     "Type": 9,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "3009": {
     "ID": 3009,
     "Name": "战场分析基站",
     "Type": 9,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "building"
   },
   "3010": {
     "ID": 3010,
     "Name": "近程电浆塔",
     "Type": 8,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5001": {
     "ID": 5001,
     "Name": "物流运输机",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5002": {
     "ID": 5002,
     "Name": "星际物流运输船",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5003": {
     "ID": 5003,
     "Name": "配送运输机",
     "Type": 5,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5101": {
     "ID": 5101,
     "Name": "原型机",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5102": {
     "ID": 5102,
     "Name": "精准无人机",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5103": {
     "ID": 5103,
     "Name": "攻击无人机",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5111": {
     "ID": 5111,
     "Name": "护卫舰",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5112": {
     "ID": 5112,
     "Name": "驱逐舰",
     "Type": 4,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5201": {
     "ID": 5201,
     "Name": "黑雾矩阵",
     "Type": 10,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5202": {
     "ID": 5202,
     "Name": "硅基神经元",
     "Type": 10,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5203": {
     "ID": 5203,
     "Name": "物质重组器",
     "Type": 10,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5204": {
     "ID": 5204,
     "Name": "负熵奇点",
     "Type": 10,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5205": {
     "ID": 5205,
     "Name": "核心素",
     "Type": 10,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "5206": {
     "ID": 5206,
     "Name": "能量碎片",
     "Type": 10,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "6001": {
     "ID": 6001,
     "Name": "电磁矩阵",
     "Type": 11,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "6002": {
     "ID": 6002,
     "Name": "能量矩阵",
     "Type": 11,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "6003": {
     "ID": 6003,
     "Name": "结构矩阵",
     "Type": 11,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "6004": {
     "ID": 6004,
     "Name": "信息矩阵",
     "Type": 11,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "6005": {
     "ID": 6005,
     "Name": "引力矩阵",
     "Type": 11,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   },
   "6006": {
     "ID": 6006,
     "Name": "宇宙矩阵",
     "Type": 11,
-    "StackSize": 0
+    "StackSize": 0,
+    "Category": "item"
   }
 }

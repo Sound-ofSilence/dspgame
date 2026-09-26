@@ -1,118 +1,4 @@
 {
-  "1501": {
-    "ID": 1501,
-    "Name": "太阳帆",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1503": {
-    "ID": 1503,
-    "Name": "小型运载火箭",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1601": {
-    "ID": 1601,
-    "Name": "机枪弹箱",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1602": {
-    "ID": 1602,
-    "Name": "钛化弹箱",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1603": {
-    "ID": 1603,
-    "Name": "超合金弹箱",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1604": {
-    "ID": 1604,
-    "Name": "炮弹组",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1605": {
-    "ID": 1605,
-    "Name": "高爆炮弹组",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1606": {
-    "ID": 1606,
-    "Name": "晶石炮弹组",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1607": {
-    "ID": 1607,
-    "Name": "等离子胶囊",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1608": {
-    "ID": 1608,
-    "Name": "反物质胶囊",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1609": {
-    "ID": 1609,
-    "Name": "导弹组",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1610": {
-    "ID": 1610,
-    "Name": "超音速导弹组",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1611": {
-    "ID": 1611,
-    "Name": "引力导弹组",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1612": {
-    "ID": 1612,
-    "Name": "干扰胶囊",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1613": {
-    "ID": 1613,
-    "Name": "压制胶囊",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1801": {
-    "ID": 1801,
-    "Name": "液氢燃料棒",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1802": {
-    "ID": 1802,
-    "Name": "氘核燃料棒",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1803": {
-    "ID": 1803,
-    "Name": "反物质燃料棒",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "1804": {
-    "ID": 1804,
-    "Name": "奇异湮灭燃料棒",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
   "2001": {
     "ID": 2001,
     "Name": "传送带",
@@ -158,12 +44,6 @@
   "2020": {
     "ID": 2020,
     "Name": "四向分流器",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "2030": {
-    "ID": 2030,
-    "Name": "流速监测器",
     "Speed": 1,
     "WorkEnergyPerTick": 0
   },
@@ -389,12 +269,6 @@
     "Speed": 1,
     "WorkEnergyPerTick": 49000
   },
-  "2317": {
-    "ID": 2317,
-    "Name": "量子化工厂",
-    "Speed": 2,
-    "WorkEnergyPerTick": 36000
-  },
   "2318": {
     "ID": 2318,
     "Name": "重组式制造台",
@@ -413,57 +287,45 @@
     "Speed": 1,
     "WorkEnergyPerTick": 8000
   },
-  "2902": {
-    "ID": 2902,
-    "Name": "自演化研究站",
-    "Speed": 3,
-    "WorkEnergyPerTick": 32000
-  },
-  "5001": {
-    "ID": 5001,
-    "Name": "物流运输机",
+  "3001": {
+    "ID": 3001,
+    "Name": "高斯机枪塔",
     "Speed": 1,
     "WorkEnergyPerTick": 0
   },
-  "5002": {
-    "ID": 5002,
-    "Name": "星际物流运输船",
+  "3003": {
+    "ID": 3003,
+    "Name": "聚爆加农炮",
     "Speed": 1,
     "WorkEnergyPerTick": 0
   },
-  "5003": {
-    "ID": 5003,
-    "Name": "配送运输机",
+  "3004": {
+    "ID": 3004,
+    "Name": "磁化电浆炮",
     "Speed": 1,
     "WorkEnergyPerTick": 0
   },
-  "5101": {
-    "ID": 5101,
-    "Name": "原型机",
+  "3005": {
+    "ID": 3005,
+    "Name": "导弹防御塔",
     "Speed": 1,
     "WorkEnergyPerTick": 0
   },
-  "5102": {
-    "ID": 5102,
-    "Name": "精准无人机",
+  "3007": {
+    "ID": 3007,
+    "Name": "信号塔",
     "Speed": 1,
     "WorkEnergyPerTick": 0
   },
-  "5103": {
-    "ID": 5103,
-    "Name": "攻击无人机",
+  "3008": {
+    "ID": 3008,
+    "Name": "行星护盾发生器",
     "Speed": 1,
     "WorkEnergyPerTick": 0
   },
-  "5111": {
-    "ID": 5111,
-    "Name": "护卫舰",
-    "Speed": 1,
-    "WorkEnergyPerTick": 0
-  },
-  "5112": {
-    "ID": 5112,
-    "Name": "驱逐舰",
+  "3009": {
+    "ID": 3009,
+    "Name": "战场分析基站",
     "Speed": 1,
     "WorkEnergyPerTick": 0
   }
